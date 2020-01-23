@@ -1,16 +1,20 @@
 // Mixins in here
 
+.button(@padding, @width) {    
+    padding: @padding;
+    width: @width;   
+}
+
 .btn {
-    .button(5% 0, 85%, 1.6rem);
+    .button(5% 0, 85%);
+    font-size: 1.6rem;
     background: #5DBCD2;  
     color: white;
     font-weight: bold;
     text-align: center;
     border-radius: 10px;
-}
 
-.button(@padding, @width, @font-size) {    
-    padding: @padding;
-    width: @width;
-    font-size: @font-size;      
+    @media @mobile {
+        .button (4% 0, 100%);
+    }
 }
