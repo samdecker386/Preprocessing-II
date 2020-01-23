@@ -1,1 +1,42 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2% 0 3% 0;
+
+    @media @mobile {
+        padding: 2% 0 1% 0;
+    }
+
+    .bus-div {
+        width: 56%;   
+        
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            @media @mobile {
+                font-size: 3rem;
+                padding: 4% 0;
+            }
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 44%;
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    
+    @media @mobile {
+        flex-direction: column;
+    }    
+}
